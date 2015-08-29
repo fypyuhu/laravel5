@@ -1,0 +1,3 @@
+[24-Aug-2015 17:57:01 UTC] PHP Warning:  APM cannot be enabled, '/var/php/apm/db' is not directory in Unknown on line 0
+[24-Aug-2015 17:57:19 UTC] PHP Warning:  APM cannot be enabled, '/var/php/apm/db' is not directory in Unknown on line 0
+[29-Aug-2015 11:12:26 UTC] PHP Warning:  APM cannot be enabled, '/var/php/apm/db' is not directory in Unknown on line 0
