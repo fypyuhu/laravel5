@@ -18,6 +18,7 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\VerifyCsrfToken::class,
+
     ];
 
     /**
@@ -29,5 +30,10 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'sentry.auth' => \Sentinel\Middleware\SentryAuth::class,
+        'sentry.admin' => \Sentinel\Middleware\SentryAdminAccess::class,
+        'sentry.member' => \Sentinel\Middleware\SentryMember::class,
+        'sentry.guest' => \Sentinel\Middleware\SentryGuest::class,
+
     ];
 }
