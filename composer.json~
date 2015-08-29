@@ -29,20 +29,20 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "/usr/bin/php artisan clear-compiled",
-            "/usr/bin/php artisan optimize"
+            "/usr/bin/php5-cli artisan clear-compiled",
+            "/usr/bin/php5-cli artisan optimize"
         ],
         "pre-update-cmd": [
-            "/usr/bin/php artisan clear-compiled"
+            "/usr/bin/php5-cli artisan clear-compiled"
         ],
         "post-update-cmd": [
-            "/usr/bin/php artisan optimize"
+            "/usr/bin/php5-cli artisan optimize"
         ],
         "post-root-package-install": [
-            "/usr/bin/php -r \"copy('.env.example', '.env');\""
+            "/usr/bin/php5-cli -r \"copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "/usr/bin/php artisan key:generate"
+            "/usr/bin/php5-cli artisan key:generate"
         ]
     },
     "config": {
